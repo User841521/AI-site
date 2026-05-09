@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <style>
+        /* Базовые стили CSS внутри HTML */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #e8491d;
+            padding: 10px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px 0;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Добро пожаловать на мой сайт!</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="home">
+                <h2>Главная страница</h2>
+                <p>Это пример простого одностраничного сайта на HTML. Здесь может быть ваш контент.</p>
+                <img src="https://via.placeholder.com/600x300" alt="Пример изображения" style="max-width: 100%;">
+            </section>
+
+            <section id="about">
+                <h2>О нас</h2>
+                <p>Мы — команда профессионалов, создающих качественные веб‑сайты. Наша миссия — помогать бизнесу расти через цифровые решения.</p>
+                <ul>
+                    <li>Опыт более 10 лет</li>
+                    <li>Более 100 успешных проектов</li>
+                    <li>Поддержка 24/7</li>
+                </ul>
+            </section>
+
+            <section id="services">
+                <h2>Наши услуги</h2>
+                <div>
+                    <h3>Веб‑разработка</h3>
+                    <p>Создаём современные сайты и веб‑приложения любой сложности.</p>
+                </div>
+                <div>
+                    <h3>Дизайн</h3>
+                    <p>Разрабатываем уникальный дизайн, который выделит вас среди конкурентов.</p>
+                </div>
+                <div>
+                    <h3>SEO‑оптимизация</h3>
+                    <p>Помогаем вашему сайту выйти в топ поисковых систем.</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами любым удобным способом:</p>
+                <address>
+                    Телефон: +7 (123) 456-78-90<br>
+                    Email: info@example.com<br>
+                    Адрес: г. Москва, ул. Примерная, д. 1
+                </address>
+                <form>
+                    <div>
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Мой первый сайт. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
